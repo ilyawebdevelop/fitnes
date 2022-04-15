@@ -1,0 +1,143 @@
+// Ways
+.ways {
+  background: $bg-light-color;
+  &__left {
+    filter: drop-shadow(4px 4px 4px rgba(16, 97, 141, 0.2));
+    height: 545px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    .ways__subtitle {
+      font-size: 30px;
+      line-height: 40px;
+      @media (max-width: 575px) {
+        font-size: 20px;
+        line-height: 30px;   
+      }
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 70%;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 59.37%, rgba(255, 255, 255, 0.9) 88.02%, #FFFFFF 100%);
+    }
+    &.ways__item {
+      height: 545px;
+      &:hover {
+        justify-content: center;align-items: center;
+        span {
+          margin-bottom: 50px;
+        }
+      }
+      @media (max-width: 1199px) {
+        height: 453px;
+      }
+      @media (max-width: 575px) {
+        height: 320px;
+      }
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__right {
+    height: 100%;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: $semibold;
+    font-size: 20px;
+    line-height: 30px;   
+    letter-spacing: 0.02em;
+    position: relative;
+    z-index: 1;
+  }
+  &__list {
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;  
+    height: 100%;
+    @media (max-width: 991px) {
+      gap: 20px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 4px 4px 4px rgba(16, 97, 141, 0.2);
+    border-radius: 4px;
+    grid-column: 6 span;
+    padding: 20px;
+    position: relative;
+    height: 256px;
+    .overlay {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      width: 0;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: $blue-color;
+      transition: opacity 0.2s, visibility 0.2s;
+    }
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30.21%, rgba(255, 255, 255, 0.9) 77.08%, #FFFFFF 100%);
+    }
+    &:hover {
+      padding: 20px;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      &::after {
+        background: none;
+      }
+      .overlay {
+        position: absolute;					
+        visibility: visible;
+        width: 100%;
+        box-shadow: 15px 15px 30px rgba(16, 97, 141, 0.15);
+        opacity: 0.9;
+      }
+      span {
+        color: $white-color;
+      }
+      .subscribe-btn  {
+        display: block;
+        z-index: 1;
+      }
+    }
+    @media (max-width: 1199px) {
+      height: 212px;
+    }
+    @media (max-width: 991px) {
+      height: 330px;
+    }
+    @media (max-width: 767px) {
+      height: 246px;
+    }
+    @media (max-width: 575px) {
+      grid-column: 12 span;
+      height: 320px;
+    }
+  }
+}

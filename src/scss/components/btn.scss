@@ -1,0 +1,206 @@
+// Btn
+.btn {
+  display: block;
+  padding: 14px 0;
+  background: #00CDAA;
+  box-shadow: 4px 4px 0px #10618D;
+  font-weight: $semibold;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white-color;
+  transition: all 0.2s linear;
+  &:hover {
+    color: $white-color;
+    box-shadow: 3px 3px 0px #10618D;
+  }
+}
+.process-item__register-btn {
+  a {
+    width: 288px;
+  }
+}
+.process-item__change-btn {
+  a {
+    width: 307px;
+  }
+}
+.process-item__notification-btn {
+  a {
+    width: 215px;
+  }
+}
+.process-item__payment-btn {
+  a {
+    width: 215px;
+  }
+}
+.section-btn_preview {
+  a {
+    color: $blue-color;
+    display: flex;
+    align-items: center;
+    font-weight: $medium;
+    font-size: 16px;
+    line-height: 30px;
+    &::after {       
+      margin-left: 10px; 
+      content: '';
+      display: block;
+      width: 7px;
+      height: 15px;
+      background: url('@img/arrows/arrow-right.svg') no-repeat center center / cover;
+    }
+  }
+}
+.loadmore {
+  a {
+    width: 360px;
+    border: 1px solid #D7EFF7;
+    border-radius: 8px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    letter-spacing: 0.02em;
+    color: #8E9DA7;
+    flex-direction: column;
+    &::after {
+      content: '';
+      display: block;
+      width: 12px;
+      height: 12px;
+      background: url('@img/arrows/arrow-down.svg') no-repeat center center / 100%;
+    }
+    @media (max-width: 575px) {
+      width: 320px;
+      height: 78px;
+    }
+  }  
+}
+.blog__all-btn {
+  display: inline-block;
+  margin-left: 10px;
+  @media (max-width: 767px){
+    margin-left: 0;
+  }
+ 
+} 
+.course__btn {
+  padding: 10px 0;
+  width: 249px;
+  background: #F5F8FD;
+  border: 1px solid #D7EFF7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: $semibold;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $blue-color;
+  transition: box-shadow 0.2s linear;
+  &:hover {
+    border: 1px solid #D7EFF7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &:active {
+    border: 1px solid #D7EFF7;
+  }
+  &:focus {   
+    border: 1px solid #D7EFF7;
+  }
+}
+.personal__content-btn-edit {
+  width: 330px;
+  line-height: 24px;
+  color: $blue-color;
+  background: #F5F8FD;
+  border: 1px solid #D7EFF7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 13px;
+  transition: box-shadow 0.2s linear;
+  display: flex;
+  font-size: 17px;
+  &::before {
+    content: '';
+    width: 21px;
+    height: 20px;
+    background: url('@img/personal/edit.svg') no-repeat center center / cover;
+    margin-right: 7px;
+  }
+  &:hover {
+    border: 1px solid #D7EFF7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: $blue-color;
+  }
+  @media (max-width: 767px){
+    width: 300px;
+  }
+}
+.personal__content-change-pass {
+  border: 1px solid #D7EFF7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 24px;
+  color: $gray-color;
+  padding: 10px 13px;
+  font-size: 17px;
+  transition: box-shadow 0.2s linear;
+  &:hover {
+    border: 1px solid #D7EFF7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);   
+  }
+  @media (max-width: 767px){
+    width: 300px;
+  }
+}
+.direction__content-unsubscribe {	
+  padding: 10px 16px;
+  margin-left: auto;
+  border: 1px solid #D7EFF7;
+  box-sizing: border-box;
+  border-radius: 4px;;	
+  width: 130px;	
+  font-weight: $semibold;
+  font-size: 13px;
+  line-height: 20px;			
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $gray-color;
+  transition: box-shadow 0.2s linear;
+  &:hover {
+    border: 1px solid #D7EFF7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);   
+  }
+}
+.subscribe-btn {
+  width: 215px;
+  background: #00CDAA;
+  box-shadow: 4px 4px 0px #10618D;
+  padding: 14px 0;
+  display: none;
+  font-weight: $semibold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white-color;
+  @media (max-width: 1199px) {
+    font-size: 16px;
+    width: 171px;
+  }
+  @media (max-width: 991px) {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+.ways__left .subscribe-btn {
+  @media (max-width: 991px) {
+    width: 326px;
+  }
+}
+

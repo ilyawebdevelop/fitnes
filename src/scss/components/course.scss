@@ -1,0 +1,102 @@
+// Course
+.course {
+  position: relative;
+  max-width: 720px;
+  padding-left: 44px;
+  &__main-title {  
+    font-weight: $semibold;   
+    line-height: 30px;  
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $blue-color;
+    margin-bottom: 30px;
+    margin-left: -37px;
+  }
+  &-wrapper {
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #F5F8FD;
+    margin-bottom: 60px;
+    border: 1px solid #D7EFF7;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  &__title {
+    margin-bottom: 5px;
+  }
+  &__price {
+    font-weight: $semibold;		
+    line-height: 30px;	
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $main-color;
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  &__date {
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray-color;
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 10px;
+    max-width: 563px;
+  }
+  &__type {
+    font-size: 16px;
+    line-height: 24px;  
+    letter-spacing: 0.02em;
+    color: $gray-color;
+    margin-bottom: 30px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('@img/announcement/calendar.svg') no-repeat center center / cover;
+    left: 7px;
+    top: 5px;
+  }
+}
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lessons__content {
+  .course {    
+    &::before {
+      top: 66px;
+    }
+    &__type {
+      margin-bottom: 0;
+    }
+  }
+  &-title_payed {
+    font-weight: $semibold;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $gray-color;
+    margin-bottom: 30px;
+  }
+}
+.lessons__content-payed {
+  .course-wrapper {
+    background-color: $white-color;
+  }
+  .course__main-title {
+    color: $gray-color;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Новости"
+})
+
+<body>	
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+			@@include('html/breadcrumps.html',{
+				"second":"Новости"			
+			})
+			<section class="articles" id="articles">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="articles__title">
+								Новости
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-md-6 col-lg-4">
+							 @@include('html/news-item.html',{})
+						</div>
+						<div class="col-sm-10 col-md-6 col-lg-4"">
+							  @@include('html/news-item.html',{})
+						</div>
+						<div class="col-sm-10 col-md-6 col-lg-4"">
+							 @@include('html/news-item.html',{})
+						</div>
+						<div class="col-sm-10 col-md-6 col-lg-4"">
+							 @@include('html/news-item.html',{})
+						</div>
+						<div class="col-sm-10 col-md-6 col-lg-4"">
+							 @@include('html/news-item.html',{})
+						</div>
+						<div class="col-sm-10 col-md-6 col-lg-4"">
+							 @@include('html/news-item.html',{})
+						</div>
+						<div class="col-sm-10 col-md-6 col-lg-4"">
+							 @@include('html/news-item.html',{})
+						</div>
+						<div class="col-sm-10 col-md-6 col-lg-4"">
+							 @@include('html/news-item.html',{})
+						</div>
+						<div class="col-sm-10 col-md-6 col-lg-4"">
+							 @@include('html/news-item.html',{})
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="loadmore">
+								<a href="#">Загрузить еще</a>
+							</div>							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="pagination justify-content-end">
+								<div class="pagination__item active">1</div>
+								<div class="pagination__item">2</div>
+								<div class="pagination__item">3</div>
+								<button class="pagination-arrow"><img src="@img/arrows/arrow-right.svg" alt="pagination-arrow"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+</html>
+
+
+
+

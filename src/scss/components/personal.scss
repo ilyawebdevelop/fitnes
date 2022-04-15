@@ -1,0 +1,104 @@
+// personal
+.personal {
+	padding-top: 0;
+	&__title {
+		margin-bottom: 10px;
+	}
+	&__subtitle {
+		font-weight: $semibold;
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: $gray-color;
+		opacity: 0.5;
+		margin-bottom: 20px;
+	}
+	&__content {
+		display: flex;
+		padding-left: 18px;
+		&-inner {
+			margin-left: 35px;
+			@media (max-width: 767px){
+				margin-left: 0;
+			}
+		}
+		&-img {
+			border-radius: 20px;
+			width: 240px;
+			height: 240px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 20px;
+			}
+			@media (max-width: 767px){
+				margin-bottom: 15px;
+			}
+		}
+		&-name {
+			margin-bottom: 6px;
+			span {
+				display: block;
+			}		
+		}
+		&-work-place {
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.02em;
+			color: $gray-color;
+			margin-bottom: 20px;
+		}
+		&-mail {		
+			display: inline;
+			font-size: 20px;
+			line-height: 30px;
+			letter-spacing: 0.02em;		
+			color: #00CDAA;
+			position: relative;
+			&::after {
+				content: '';
+				width: 100%;
+				height: 1px;
+				background-color: #00CDAA;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&-tel {		
+			display: block;
+			font-weight: $semibold;
+			font-size: 20px;
+			line-height: 30px;		
+			letter-spacing: 0.02em;
+			text-transform: uppercase;
+			margin-top: 15px;
+			margin-bottom: 40px;
+			&:hover {
+				font-weight: $semibold;
+				opacity: 1;
+			}
+		}
+		&-btn-wrapper {
+			display: flex;
+			@media (max-width: 767px){
+				flex-direction: column;
+			}
+		}
+		&-btn-edit {
+			margin-right: 6px;
+		}
+		@media (max-width: 767px){
+			flex-direction: column;
+			padding-left: 0;
+		}
+	}
+	@media (max-width: 767px){
+		padding-top: 45px;
+	}
+}

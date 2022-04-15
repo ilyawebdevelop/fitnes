@@ -1,0 +1,13 @@
+// Institute
+.institute {
+  padding-top: 0;
+  &__title {
+    font-weight: $medium;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: -0.02em;
+  }
+  @media (max-width: 767px) {
+    padding-top: 45px;
+  }
+}

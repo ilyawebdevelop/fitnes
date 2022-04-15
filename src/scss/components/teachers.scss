@@ -1,0 +1,58 @@
+// Teachers
+.teachers {
+  padding-top: 0;
+  &__title {
+    font-weight: $medium;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: -0.02em;
+    @media (max-width: 991px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+  &__img {
+    height: 549px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 575px) {
+      height: 420px;
+    }
+  }
+  &__content {
+    padding-left: 50px;
+    padding-top: 38px;
+  	&-title {
+      max-width: 263px;
+      margin-bottom: 6px;
+  	}
+  	&-subtitle {
+      margin-bottom: 30px;  
+      font-size: 16px;
+      line-height: 24px; 
+      color: $gray-color;
+  	} 
+    @media (max-width: 991px) {
+      padding-left: 0;
+    }
+  }
+  .text-huge {
+    margin-bottom: 75px;
+    @media (max-width: 991px) {
+      margin-bottom: 60px;
+    }
+  }
+  .pad-0 {
+    @media (max-width: 575px) {
+      padding: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    padding-top: 45px;
+  }  
+  @media (max-width: 575px) {
+    padding-bottom: 75px;
+  }
+}

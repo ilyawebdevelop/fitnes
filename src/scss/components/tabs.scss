@@ -1,0 +1,68 @@
+.tabs__nav {
+	border: 1px solid #D7EFF7;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+	overflow: hidden;
+	&-item {
+		padding: 15px;	
+		transition: background 0.2s linear;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		a {
+			letter-spacing: 0.02em;
+			color: $gray-color;
+			transition: color 0.2s linear;
+		}
+		&.active {
+			background: #F5F8FD;
+			a {			
+				color: #333C43;
+			}
+			@media (max-width: 991px){
+				background-color: $white-color;
+			}
+		}
+		&:hover {
+			background: #F5F8FD;
+			a {
+				color: #333C43;
+				opacity: 1;
+				&:hover {
+					color: #333C43;
+					opacity: 1;
+				}
+			}
+		}
+		&::before {
+			content: '';
+			display: block;
+			width: 24px;
+			height: 24px;
+			margin-right: 20px;
+		}
+		&:nth-child(1) {
+			&::before {
+				background: url('@img/announcement/calendar.svg') no-repeat center center / cover;
+			}
+		}
+		&:nth-child(2) {
+			&::before {
+				background: url('@img/announcement/person.svg') no-repeat center center / cover;
+			}
+		}
+		&:nth-child(3) {
+			&::before {
+				background: url('@img/announcement/force.svg') no-repeat center center / cover;
+			}
+		}
+		&:nth-child(4) {
+			&::before {
+				background: url('@img/announcement/lessons.svg') no-repeat center center / cover;
+			}
+		}
+	}
+	@media (max-width: 991px){
+		margin-bottom: 45px;
+	}
+}

@@ -1,0 +1,106 @@
+// About
+.about {
+  background: $bg-light-color;
+  &__wrapper {
+    background-color: $white-color;
+    filter: drop-shadow(4px 4px 4px rgba(16, 97, 141, 0.2));
+    @media (max-width: 575px) {
+      filter: none;
+    }
+  }
+  &__title {    
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  }
+  &__img {
+    min-height: 569px;
+    img {
+      object-fit: cover;
+      min-height: 569px;
+      @media (max-width: 1199px){
+        min-height: 600px;
+      }
+      @media (max-width: 767px) {
+        min-height: 500px;
+      }
+    }  
+    @media (max-width: 1199px) {
+      min-height: 600px;
+    }
+    @media (max-width: 767px) {
+      min-height: 500px;
+    }
+  }
+  &__content {
+    height: 100%;
+    padding: 37px 30px 45px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 991px) {
+      padding-left: 30px;
+    }
+    @media (max-width: 575px) {
+      padding: 30px 8px 30px 8px;
+    }
+  }
+  &__text {
+    margin-bottom: 50px;
+    max-width: 548px;
+    @media (max-width: 575px) {
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  &__name {
+    font-weight: $bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    display: block;
+    span {  
+      font-size: 30px;
+      line-height: 37px;
+      letter-spacing: 0.02em;
+      display: block;
+      @media (max-width: 575px) {      
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+    @media (max-width: 991px) {
+      font-size: 22px;
+      line-height: 30px;
+    }
+    @media (max-width: 575px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  &__work-place {
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $gray-color;
+    margin-bottom: 30px;
+    display: block;
+    @media (max-width: 575px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  @media (max-width: 575px) {
+    background-color: $white-color;
+    padding-top: 0;
+  }
+}
+.about-pad-0 {
+  @media (max-width: 575px) {
+    padding: 0;
+  }
+}

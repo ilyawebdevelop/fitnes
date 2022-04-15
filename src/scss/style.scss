@@ -1,0 +1,52 @@
+// стили для модального окна
+@import "../../node_modules/graph-modal/dist/graph-modal.min";
+// стили для табов
+// @import "../../node_modules/graph-tabs/dist/graph-tabs.min";
+
+// стили для библиотеки aos
+// @import "../../node_modules/aos/dist/aos";
+
+// стили для свайпера
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// @import "../../node_modules/simplebar/dist/simplebar.min";
+// Базовые подключения
+@import 'bootstrap.min';
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'specifications';
+
+// Подключения компонентов страницы
+@import "./components/btn";
+@import "./components/modal";
+@import "./components/burger";
+@import "./components/checkbox";
+@import "./components/tabs";
+@import "./components/pagination";
+@import "./components/breadcrumps";
+@import "./components/socials";
+@import "./components/header";
+@import "./components/intro";
+@import "./components/news";
+@import "./components/ways";
+@import "./components/process";
+@import "./components/about";
+@import "./components/blog";
+@import "./components/footer";
+@import "./components/institute";
+@import "./components/advantages";
+@import "./components/photos";
+@import "./components/accreditation";
+@import "./components/teachers";
+@import "./components/experts";
+@import "./components/articles";
+@import "./components/register";
+@import "./components/login";
+@import "./components/authorization";
+@import "./components/announcement";
+@import "./components/course";
+@import "./components/personal";
+@import "./components/direction";
+@import "./components/lessons";

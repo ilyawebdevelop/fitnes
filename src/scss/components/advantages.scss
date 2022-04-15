@@ -1,0 +1,39 @@
+// Advantages
+.advantages {
+  padding-bottom: 135px;
+  &__title-descr {
+    font-weight: $light;
+    font-size: 22px;
+    line-height: 36px;  
+  }
+  img {
+    margin: 72px auto 30px;
+    @media (max-width: 991px) {
+      margin-top: 45px;
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+  &__card-title {
+    font-weight: $semibold;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @media (max-width: 991px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  &__card-text {  
+    font-size: 16px;
+    line-height: 24px; 
+    color: $gray-color;
+    @media (max-width: 991px) {
+      max-width: 500px;
+    }
+  }
+  @media (max-width: 991px) {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+}

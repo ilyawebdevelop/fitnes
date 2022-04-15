@@ -1,0 +1,40 @@
+// Pagination
+.pagination {
+  margin-top: 45px;
+  &__item {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;   
+    border: 1px solid lighten(#8E9DA7, 30%);  
+    border-radius: 8px;
+    margin-right: 3px;   
+    cursor: pointer;
+    transition: border 0.2s linear, color 0.2s linear;
+    &.active {
+      border: 1px solid #8E9DA7;  
+      transition: border 0.2s linear, color 0.2s linear;
+    }
+    &:hover {
+      border: 1px solid #8E9DA7;  
+    }
+  }
+  &-arrow {
+    border: 1px solid lighten(#8E9DA7, 30%);  
+    transition: border 0.2s linear, color 0.2s linear;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #8E9DA7;  
+    }
+  }
+  @media (max-width: 575px) {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,49 @@
+// Experts
+.experts {
+	background-color: $bg-light-color;
+	&__title {
+		&-descr {
+			font-weight: $light;
+			font-size: 22px;
+			line-height: 36px;
+			margin-bottom: 60px;
+			@media (max-width: 991px) {
+				font-size: 20px;
+				line-height: 34px;
+				color: $blue-color;
+			}
+		}
+	}
+	&-item {
+		height: 400px;
+		padding-bottom: 17px;
+		display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+		margin-bottom: 30px;
+		cursor: pointer;
+		transition: opacity 0.2s linear;
+		&:hover {
+			opacity: .8;
+		}
+		&__name {		
+			font-weight: $semibold;			
+			line-height: 30px;
+			text-align: center;
+			letter-spacing: 0.02em;
+			text-transform: uppercase;			
+			color: $white-color;
+			max-width: 160px;
+			margin: 0 auto 10px;
+		}
+		&__descr {		
+			font-size: 16px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.02em;
+			color: #F2F2F2;
+			max-width: 222px;
+			margin: 0 auto;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Блог"
+})
+
+<body>	
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+			@@include('html/breadcrumps.html',{
+				"second":"Блог"			
+			})
+			<section class="articles" id="articles">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<div class="articles__title">
+								Блог
+							</div>
+						</div>
+						<div class="col-lg-6 text-start text-lg-end">
+							<span class="filter-name">Фильтр по теме:</span>
+							<div class="blog__all-btn section-btn_preview">
+					          <a href="articles.html" class="justify-content-end">Все статьи</a>
+					        </div>        
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							 @@include('html/blog-item.html',{})
+						</div>
+						<div class="col-lg-4">
+							 @@include('html/blog-item.html',{})
+						</div>
+						<div class="col-lg-4">
+							 @@include('html/blog-item.html',{})
+						</div>
+						<div class="col-lg-4">
+							 @@include('html/blog-item.html',{})
+						</div>
+						<div class="col-lg-4">
+							 @@include('html/blog-item.html',{})
+						</div>
+						<div class="col-lg-4">
+							 @@include('html/blog-item.html',{})
+						</div>
+						<div class="col-lg-4">
+							 @@include('html/blog-item.html',{})
+						</div>
+						<div class="col-lg-4">
+							 @@include('html/blog-item.html',{})
+						</div>
+						<div class="col-lg-4">
+							 @@include('html/blog-item.html',{})
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="loadmore">
+								<a href="#">Загрузить еще</a>
+							</div>							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="pagination justify-content-end">
+								<div class="pagination__item active">1</div>
+								<div class="pagination__item">2</div>
+								<div class="pagination__item">3</div>
+								<button class="pagination-arrow"><img src="@img/arrows/arrow-right.svg" alt="pagination-arrow"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+</html>
+
+
+
+

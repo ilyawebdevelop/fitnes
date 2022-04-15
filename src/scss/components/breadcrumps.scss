@@ -1,0 +1,34 @@
+// Breadcrumps
+.breadcrumps {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-top: 1px solid #D7EFF7;
+  &__wrapper {
+    display: flex;
+  }
+  a {    
+    font-weight: $light;
+    line-height: 30px;
+    color: $blue-color;
+    font-size: 15px;
+    &:last-child {  
+      font-weight: $light;
+      font-size: 15px;
+      line-height: 30px;  
+      color: $main-color;
+    }
+    &:not(:last-child) {
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      &::after {       
+        margin-left: 10px; 
+        content: '';
+        display: block;
+        width: 7px;
+        height: 14px;
+        background: url('@img/arrows/arrow-right.svg') no-repeat center center / 100%;
+      }    
+    }
+  }
+}

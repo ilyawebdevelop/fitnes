@@ -1,0 +1,62 @@
+// Process
+.process {
+  &__container {
+    position: relative;
+  }
+  &_left {
+    left: 100px;
+    position: relative;
+    width: 100%;
+    @media (max-width: 991px) {
+      left: 0;
+    }
+  }
+  &__title {
+    &-wrapper {
+      position: relative;
+    }
+    &-bg {
+      position: absolute;
+      top: 0;
+      right: -282px;
+      @media (max-width: 1400px) {  
+        width: 250px;
+        right: 0;
+      }
+    }
+  }
+  &-item {
+    max-width: 362px;
+    &__title {
+      margin-bottom: 12px;
+      margin-top: 20px;
+      max-width: 322px;
+    }
+    &__descr {
+      margin-bottom: 24px;  
+      line-height: 28px;    
+      letter-spacing: 0.02em;   
+      color: $gray-color; 
+      @media (max-width: 991px) {   
+        font-size: 16px;
+        line-height: 24px; 
+        letter-spacing: 0.02em;
+      } 
+    }
+    img {
+      margin-left: -25px;
+    } 
+    &_bottom {
+      padding-top: 90px;
+      @media (max-width: 991px){
+        padding-top: 0;
+      }
+    }  
+    @media (max-width: 991px) {
+      margin-bottom: 45px;
+    }
+  }
+  @media (max-width: 1700px) {
+    overflow-x: hidden;
+  }
+}

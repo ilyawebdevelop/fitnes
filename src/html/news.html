@@ -1,0 +1,35 @@
+<!-- News -->
+<section class="news" id="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="news__title section-title">
+          Новости
+        </h2>
+      </div>
+      <div class="d-none d-md-block col-lg-6 text-end">
+        <div class="news__all-btn section-btn_preview">
+          <a href="news.html" class="justify-content-end">Все новости</a>
+        </div>        
+      </div>
+    </div>
+    <div class="row">
+     <div class="col-sm-10 col-md-6 col-lg-4">
+       @@include('news-item.html',{})
+     </div>
+      <div class="col-sm-10 col-md-6 col-lg-4">
+        @@include('news-item.html',{})
+      </div>
+      <div class="col-sm-10 col-md-6 col-lg-4">
+       @@include('news-item.html',{})
+     </div>      
+    </div>
+    <div class="row">
+      <div class="d-block d-md-none col">
+        <div class="news__all-btn section-btn_preview">
+          <a href="news.html" class="justify-content-start">Все новости</a>
+        </div>    
+      </div>
+    </div>
+  </div>
+</section>

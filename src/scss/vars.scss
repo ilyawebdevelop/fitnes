@@ -1,0 +1,27 @@
+// Colors
+$bg-main-color: #fff;
+$bg-light-color: #F5F8FD;
+$main-color: #333C43;
+$white-color: #fff;
+$gray-color: #8E9DA7;
+$blue-color: #10618D;
+$gold: #C6A47C;
+
+// Fonts
+$font-family: 'Montserrat';
+
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+ // Containers
+:root { 
+  --content-width: 1330px;
+  --content-fluid-width: 1790px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+}

@@ -1,0 +1,28 @@
+// Blog
+.blog {
+  padding-top: 60px; 
+  padding-bottom: 90px;
+  &__item {    
+    margin-bottom: 45px;
+  } 
+  &__link {
+    margin-top: 10px;
+    a {     
+      font-weight: $medium;
+      font-size: 20px;
+      line-height: 28px;     
+      letter-spacing: 0.02em;     
+      color: $blue-color;
+      @media (max-width: 991px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+  img {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 45px;
+  }
+}
