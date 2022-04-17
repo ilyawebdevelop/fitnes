@@ -14,3 +14,7 @@ export function isWebp() {
 		document.documentElement.classList.add(className);
 	});
 }
+
+// Подключение анимаций по скроллу
+import AOS from 'aos';
+AOS.init();

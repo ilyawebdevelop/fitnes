@@ -15,6 +15,12 @@
     margin-bottom: 20px;
   }
   &__register {
+    a {
+      transition: opacity .2s linear;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
     @media (max-width: 991px){
       margin-bottom: 30px;
     }
@@ -58,6 +64,10 @@
       width: 100%;
     }
   }
+  label {
+    padding-left: 60px;
+    color: $gray-color;
+  }
   .btn {
     width: 113px;   
     display: inline-block;
@@ -71,6 +81,12 @@
   }
   input[type=checkbox] {
     width: auto;
+  }
+   .form-control {    
+    padding: 11px 15px 11px 54px;
+    line-height: 28px;  
+    box-shadow: none;    
+    
   }
 }
 .remember-wrapper {
@@ -93,6 +109,9 @@
     letter-spacing: 0.02em;
     text-decoration-line: underline;
     color: #00CDAA;
+    &:hover {
+      opacity: 0.5;
+    }
   }
   @media (max-width: 991px){
     margin-bottom: 30px;
@@ -124,4 +143,12 @@
   img {
     margin: 0 auto;
   }
+}
+.custom-checkbox-text {
+  margin-right: 10px;
+  font-family: 'Montserrat';  
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #8E9DA7;
 }

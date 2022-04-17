@@ -22,9 +22,10 @@
     justify-content: flex-end;
 		margin-bottom: 30px;
 		cursor: pointer;
-		transition: opacity 0.2s linear;
+		transition: opacity 0.2s linear, filter 0.2s linear;
+		filter: grayscale(99%);  
 		&:hover {
-			opacity: .8;
+			filter: grayscale(0%);  
 		}
 		&__name {		
 			font-weight: $semibold;			

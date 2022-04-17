@@ -3,6 +3,10 @@
 	padding-top: 0;
 	&__title {
 		margin-bottom: 10px;
+		@media (max-width: 767px){
+			font-size: 36px;			
+			line-height: 44px;
+		}
 	}
 	&__subtitle {
 		font-weight: $semibold;
@@ -19,8 +23,10 @@
 		padding-left: 18px;
 		&-inner {
 			margin-left: 35px;
-			@media (max-width: 767px){
+			@media (max-width: 991px){
 				margin-left: 0;
+				padding-left: 15px;
+				margin-top: 15px;
 			}
 		}
 		&-img {
@@ -93,7 +99,7 @@
 		&-btn-edit {
 			margin-right: 6px;
 		}
-		@media (max-width: 767px){
+		@media (max-width: 991px){
 			flex-direction: column;
 			padding-left: 0;
 		}

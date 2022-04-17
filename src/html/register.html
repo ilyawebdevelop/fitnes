@@ -18,22 +18,25 @@
 					курсы по выбранному направлению и получать прочую информацию.
 				</p>
 				<form action="#" class="register__form" id="register__form">
-					<div class="input-wrapper name">
-						<input type="text" placeholder="ФИО" id="registerName">
+					<div class="input-wrapper name form-floating">
+						<input class="form-control" type="text" placeholder="ФИО" id="registerName">
+						<label for="registerName">ФИО</label>
 					</div>
-					<div class="input-wrapper mail">
-						<input type="email" placeholder="Email" id="registerMail">
+					<div class="input-wrapper mail form-floating">
+						<input class="form-control" type="email" placeholder="Email" id="registerMail">
+						<label for="registerMail">Email</label>
 					</div>
-					<div class="input-wrapper password">
-						<input type="password" placeholder="Пароль" id="registerPassword1">
+					<div class="input-wrapper password form-floating">
+						<input class="form-control" type="password" placeholder="Пароль" id="registerPassword1">
+						<label for="registerPassword1">Пароль</label>
 					</div>
-					<div class="input-wrapper password">
-						<input type="password" placeholder="Повторите пароль" id="registerPassword2">
+					<div class="input-wrapper password form-floating">
+						<input class="form-control" type="password" placeholder="Повторите пароль" id="registerPassword2">
+						<label for="registerPassword2">Повторите пароль</label>
 					</div>
 					<div class="agreement">
 						<input type="checkbox" id="agreement-checkbox" class="custom-checkbox">
-						<label for="agreement-checkbox"></label>						
-						<span>Согласен получать уведомления на указанный email-адрес</span>
+						<label for="agreement-checkbox" class="custom-checkbox-text">Согласен получать уведомления на указанный email-адрес</label>				
 					</div>
 					<div class="register__form-bottom">
 						<a class="btn" href="#">Зарегистрироваться</a>

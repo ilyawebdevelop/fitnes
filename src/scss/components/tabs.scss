@@ -19,6 +19,27 @@
 			a {			
 				color: #333C43;
 			}
+			&:nth-child(1) {
+				&::before {
+					background: url('@img/announcement/calendar-blue.svg') no-repeat center center / cover;
+				}
+			}
+			&:nth-child(2) {
+				&::before {
+					background: url('@img/announcement/person-blue.svg') no-repeat center center / cover;
+					width: 26px;
+				}
+			}
+			&:nth-child(3) {
+				&::before {
+					background: url('@img/announcement/force-blue.svg') no-repeat center center / cover;
+				}
+			}
+			&:nth-child(4) {
+				&::before {
+					background: url('@img/announcement/lessons-blue.svg') no-repeat center center / cover;
+				}
+			}
 			@media (max-width: 991px){
 				background-color: $white-color;
 			}

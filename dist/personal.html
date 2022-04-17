@@ -1,260 +1,253 @@
 <!DOCTYPE html>
 <html lang="ru">
- <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="img/favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css">
-	<title>Личный кабинет</title>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Личный кабинет</title>
 </head>
 
-<body>	
-	<div class="wrapper">
-		<!-- Header -->
-<header class="header" id="header">
-  <div class="header__top">
-    <div class="container-1380 container">   
-      <div class="row align-items-center">
-        <div class="col-6 col-md-3 order-3 order-md-1">
-          <a href="#" class="header__reference">Справочный материал</a>
-          <div class="header__person-img d-block d-md-none ml-auto">
-            <img src="img/person/person.png" alt="person-photo">
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header__top">
+        <div class="container-1380 container">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-3 order-3 order-md-1">
+              <a href="#" class="header__reference">Справочный материал</a>
+              <div class="header__person-img d-block d-md-none ml-auto">
+                <img src="img/person/person.png" alt="person-photo">
+              </div>
+            </div>
+            <div class="d-none d-md-block col-md-6 justify-content-center order-md-2">
+              <a href="tel:88001234567" class="header__tel justify-content-center">8 800 123 45 67</a>
+            </div>
+            <div class="col-6 col-md-3 order-1 order-md-3">
+              <div class="socials">
+                <ul class="socials__list justify-content-start justify-content-md-end">
+                  <li class="socials__item">
+                    <a href="#">
+                      <img src="img/header/vk.svg" alt="socials-img">
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#">
+                      <img src="img/header/youtube.svg" alt="socials-img">
+                    </a>
+                  </li>
+                </ul>
+              </div><!-- /socials -->
+            </div>
+          </div>
+        </div><!-- /header__top -->
+      </div>
+      <div class="header__bottom">
+        <div class="container-1380 container">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-2">
+              <a href="index.html" class="d-flex header__logo">
+                <img src="img/header/logo.svg" alt="logo">
+                <img src="img/header/logo-text.svg" alt="logo-text">
+              </a>
+            </div>
+            <div class="col-6 col-md-9">
+              <nav class="header__nav">
+                <ul class="header__nav-list justify-content-center">
+                  <li class="header__nav-item">
+                    <a href="institute.html">институт</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="teachers.html">преподаватели</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="news.html">новости</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="articles.html">блог</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="burger menu" id="toggle" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                <svg viewBox="0 0 48 48">
+                  <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                  <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                  <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="d-none d-md-block col-sm-1">
+              <div class="header__person">
+                <span class="header__person-name">Диана К.</span>
+                <div class="header__person-img">
+                  <img src="img/person/person.png" alt="person-photo">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="d-none d-md-block col-md-6 justify-content-center order-md-2">
-          <a href="tel:88001234567" class="header__tel justify-content-center">8 800 123 45 67</a>
+      </div><!-- /header__down -->
+    </header>
+    <main class="main">
+      <!-- Breadcrumps-third -->
+      <section class="breadcrumps d-none d-md-block" id="breadcrumps">
+        <div class="container">
+          <div class="breadcrumps__wrapper">
+            <a href="index.html">Главная</a>
+            <a href="Личный кабинет-link">Личный кабинет</a>
+            <a href="#">Личная информация</a>
+          </div>
         </div>
-        <div class="col-6 col-md-3 order-1 order-md-3">
-          <div class="socials">
-            <ul class="socials__list justify-content-start justify-content-md-end">
-              <li class="socials__item">
-                <a href="#">
-                  <img src="img/header/vk.svg" alt="socials-img">
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#">
-                  <img src="img/header/youtube.svg" alt="socials-img">
-                </a>
-              </li>
-            </ul>
-          </div><!-- /socials -->
+      </section>
+      <!-- personal -->
+      <section class="personal" id="personal">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="personal__title">
+                Личная информация
+              </h2>
+              <div class="personal__subtitle">
+                Личный кабинет
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              <ul class="tabs__nav">
+                <li class="tabs__nav-item"><a href="announcement.html">Анонсы</a></li>
+                <li class="tabs__nav-item active"><a href="personal.html">Личная информация</a></li>
+                <li class="tabs__nav-item"><a href="direction.html">Мои направления</a></li>
+                <li class="tabs__nav-item"><a href="lessons.html">Занятия</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-9">
+              <div class="personal__content">
+                <div class="personal__content-img">
+                  <img src="img/person/person.png" alt="personal-image">
+                </div>
+                <div class="personal__content-inner">
+                  <h3 class="personal__content-name">
+                    Коган <span>Диана Витальевна</span>
+                  </h3>
+                  <div class="personal__content-work-place">
+                    нутрициолог-диетолог
+                  </div>
+                  <a href="mailto:cogan.di@gmail.com" class="personal__content-mail">
+                    cogan.di@gmail.com
+                  </a>
+                  <a href="tel:88001234567" class="personal__content-tel">
+                    8 800 123 45 67
+                  </a>
+                  <div class="personal__content-btn-wrapper">
+                    <a href="#" class="personal__content-btn-edit">Редактировать информацию</a>
+                    <a href="#" class="personal__content-change-pass">Сменить пароль</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div><!-- /header__top -->  
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-2">
+              <a href="index.html" class="logo-link">
+                <img src="img/footer/footer-logo.svg" alt="logo">
+              </a>
+            </div>
+            <div class="col-lg-8">
+              <nav class="footer__nav">
+                <ul class="footer__nav-list d-block d-lg-flex justify-content-center">
+                  <li class="footer__nav-item">
+                    <a href="institute.html">Институт</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="teachers.html">Преподаватели</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="news.html">Новости</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="articles.html">Блог</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul><!-- /footer__nav-list -->
+              </nav>
+              <a href="#" class="header__reference d-block d-lg-none">Справочный материал</a>
+              <div class="footer__contacts d-block d-lg-flex justify-content-center">
+                <a href="tel:8299922299" class="footer__tel">8 ХХХ ХХХ ХХ-ХХ</a>
+                <a href="mailto:email@rif.ru" class="footer__mail">email@rif.ru</a>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="socials">
+                <ul class="socials__list justify-content-start justify-content-lg-end">
+                  <li class="socials__item">
+                    <a href="#">
+                      <img src="img/header/vk.svg" alt="socials-img">
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#">
+                      <img src="img/header/youtube.svg" alt="socials-img">
+                    </a>
+                  </li>
+                </ul>
+              </div><!-- /socials -->
+              <a href="#" class="header__reference d-none d-lg-block">Справочный материал</a>
+            </div>
+          </div>
+        </div><!-- /container -->
+      </div><!-- /footer__top -->
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <span class="copyright text-center text-lg-start">© РИФ</span>
+              <a href="#" class="politics text-center d-block d-lg-inline">Политика конфиденциальности</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="footer__check text-center">
+                <div class="footer__check-top">
+                  <span>ОГРН </span>
+                  <span>12345678900000</span>
+                </div>
+                <div class="footer__check-bottom">
+                  <span>ИНН</span>
+                  <span class="mr-8">1234567890</span>
+                  <span>КПП</span>
+                  <span>123456789</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 text-center text-lg-end">
+              <div class="footer__develop">Разработка и продвижение </div>
+              <div class="footer__develop">
+                сайта —
+                <a href="вангер.рф">вангер.рф</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /footer__bottom -->
+    </footer>
+
   </div>
-  <div class="header__bottom">
-    <div class="container-1380 container">
-      <div class="row align-items-center">
-        <div class="col-6 col-md-2">
-          <a href="#" class="d-flex header__logo">
-            <img src="img/header/logo.svg" alt="logo">
-            <img src="img/header/logo-text.svg" alt="logo-text">
-          </a>
-        </div>
-        <div class="col-6 col-md-9">
-          <nav class="header__nav">
-            <ul class="header__nav-list justify-content-center">
-              <li class="header__nav-item">
-                <a href="#">институт</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#">преподаватели</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#">новости</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#">блог</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#">контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="burger menu" id="toggle" aria-label="Открыть меню" aria-expanded="false"  data-burger>
-            <svg viewBox="0 0 48 48">
-              <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-              <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-              <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
-            </svg>
-          </button>
-        </div>        
-        <div class="d-none d-md-block col-sm-1">
-          <div class="header__person">
-            <span class="header__person-name">Диана К.</span>
-            <div class="header__person-img">
-              <img src="img/person/person.png" alt="person-photo">
-            </div>
-          </div>       
-        </div>
-      </div>
-    </div>
-  </div><!-- /header__down -->
-</header>
-		<main class="main">
-			<!-- Breadcrumps-third -->
-<section class="breadcrumps d-none d-md-block" id="breadcrumps">
-  <div class="container">
-    <div class="breadcrumps__wrapper">
-      <a href="index.html">Главная</a>
-      <a href="#">Личный кабинет</a>   
-       <a href="#">Личная информация</a>        
-    </div>
-  </div>
-</section>
-
-			<!-- personal -->
-<section class="personal" id="personal">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h2 class="personal__title">
-					Личная информация
-				</h2>
-				<div class="personal__subtitle">
-					Личный кабинет
-				</div>
-			</div>
-		</div>	
-		<div class="row">
-			<div class="col-lg-3">
-				 <ul class="tabs__nav">
-			        <li class="tabs__nav-item"><a href="announcement.html">Анонсы</a></li>
-			        <li class="tabs__nav-item active"><a href="personal.html">Личная информация</a></li>
-			        <li class="tabs__nav-item"><a href="direction.html">Мои направления</a></li>
-			        <li class="tabs__nav-item"><a href="lessons.html">Занятия</a></li>		       
-  				</ul>
-			</div>
-			<div class="col-lg-9">
-				<div class="personal__content">
-					<div class="personal__content-img">
-						<img src="img/person/person.png" alt="personal-image">
-					</div>
-					<div class="personal__content-inner">
-						<h3 class="personal__content-name">
-							Коган <span>Диана Витальевна</span>
-						</h3>
-						<div class="personal__content-work-place">
-							нутрициолог-диетолог
-						</div>
-						<a href="mailto:cogan.di@gmail.com" class="personal__content-mail">	
-							cogan.di@gmail.com
-						</a>
-						<a href="tel:88001234567" class="personal__content-tel">	
-							8 800 123 45 67
-						</a>
-						<div class="personal__content-btn-wrapper">
-							<a href="#" class="personal__content-btn-edit">Редактировать информацию</a>
-							<a href="#" class="personal__content-change-pass">Сменить пароль</a>
-						</div>
-					</div>			
-				</div>
-			</div>
-		</div>					
-	</div>
-</section>
-
-			
-		
-		</main>
-		<!-- Footer -->
-<footer class="footer" id="footer">
-  <div class="footer__top">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-2">
-          <a href="#" class="logo-link">
-            <img src="img/footer/footer-logo.svg" alt="logo">
-          </a>
-        </div>
-        <div class="col-lg-8">
-           <nav class="footer__nav">
-             <ul class="footer__nav-list d-block d-lg-flex justify-content-center">
-               <li class="footer__nav-item">
-                 <a href="#">Институт</a>
-               </li>
-               <li class="footer__nav-item">
-                <a href="#">Преподаватели</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#">Новости</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#">Блог</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#">Контакты</a>
-              </li>
-             </ul><!-- /footer__nav-list -->
-           </nav>
-           <a href="#" class="header__reference d-block d-lg-none">Справочный материал</a>
-           <div class="footer__contacts d-block d-lg-flex justify-content-center">
-             <a href="tel:8299922299" class="footer__tel">8 ХХХ ХХХ ХХ-ХХ</a>
-             <a href="mailto:email@rif.ru" class="footer__mail">email@rif.ru</a>
-           </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="socials">
-            <ul class="socials__list justify-content-start justify-content-lg-end">
-              <li class="socials__item">
-                <a href="#">
-                  <img src="img/header/vk.svg" alt="socials-img">
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#">
-                  <img src="img/header/youtube.svg" alt="socials-img">
-                </a>
-              </li>
-            </ul>
-          </div><!-- /socials -->
-          <a href="#" class="header__reference d-none d-lg-block">Справочный материал</a>
-        </div>
-      </div>
-    </div><!-- /container -->
-  </div><!-- /footer__top -->
-  <div class="footer__bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <span class="copyright text-center text-lg-start">© РИФ</span>
-          <a href="#" class="politics text-center d-block d-lg-inline">Политика конфиденциальности</a>
-        </div>
-        <div class="col-lg-6">
-          <div class="footer__check text-center">
-            <div class="footer__check-top">
-              <span>ОГРН </span>
-              <span>12345678900000</span>
-            </div>
-            <div class="footer__check-bottom">
-              <span>ИНН</span>
-              <span class="mr-8">1234567890</span>
-              <span>КПП</span>
-              <span>123456789</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 text-center text-lg-end">
-          <div class="footer__develop">Разработка и продвижение </div>
-          <div class="footer__develop">
-            сайта —
-            <a href="вангер.рф">вангер.рф</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- /footer__bottom -->
-
-</footer>
-
-
-	</div>
-	<script src="js/app.min.js"></script>
+  <script src="js/app.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>
-
-
-
-

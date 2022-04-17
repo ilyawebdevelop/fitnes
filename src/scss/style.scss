@@ -4,13 +4,17 @@
 // @import "../../node_modules/graph-tabs/dist/graph-tabs.min";
 
 // стили для библиотеки aos
-// @import "../../node_modules/aos/dist/aos";
+@import "../../node_modules/aos/dist/aos";
 
 // стили для свайпера
 @import "../../node_modules/swiper/swiper-bundle.min";
 
+// Photoswipe gallery
+@import "../../node_modules/photoswipe/dist/photoswipe";
+
 // @import "../../node_modules/simplebar/dist/simplebar.min";
 // Базовые подключения
+
 @import 'bootstrap.min';
 @import 'vars';
 @import 'mixins';
@@ -43,7 +47,6 @@
 @import "./components/experts";
 @import "./components/articles";
 @import "./components/register";
-@import "./components/login";
 @import "./components/authorization";
 @import "./components/announcement";
 @import "./components/course";

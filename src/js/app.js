@@ -1,12 +1,14 @@
 import * as flsFunctions from "./modules/functions.js";
+import PhotoSwipeLightbox from '../../node_modules/photoswipe/dist/photoswipe-lightbox.esm.js';
 import './components.js';
+
 
 flsFunctions.isWebp();
 
 // Import swiper
-import Swiper, { Navigation, Pagination, Autoplay, Mousewheel} from 'swiper';
-Swiper.use([Navigation, Pagination, Autoplay, Mousewheel]);
-const swiper = new Swiper();
+import Swiper, { Navigation, Pagination, Autoplay, Mousewheel } from 'swiper';
+Swiper.use([Navigation, Pagination, Autoplay, Mousewheel ]);
+// const swiper = new Swiper();
 
 // Инициализация слайдера Photos
 const photosSlider = document.querySelector('.photos__slider');
@@ -33,11 +35,8 @@ let mySwiperPhoto = new Swiper(photosSlider, {
 		},  
 		768: {
 			slidesPerView: 1,	
-		
 		},     
-		992: {
-		
-		
+		992: {		
 		},
 		1200: {		
 		
@@ -49,7 +48,9 @@ let mySwiperPhoto = new Swiper(photosSlider, {
 const accreditationSlider = document.querySelector('.accreditation__slider');
 let mySwiperAccreditation = new Swiper(accreditationSlider, { 	
   slidesPerView: 3,	
-  spaceBetween: 30,
+  spaceBetween: 30,  
+	preloadImages: true,
+	updateOnImagesReady: true,
   centeredSlides: true,
   loop: true,   
 	breakpoints: {  
@@ -73,12 +74,19 @@ let mySwiperAccreditation = new Swiper(accreditationSlider, {
 	}
 });
 
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#my-gallery',
+  children: 'a',
+  pswpModule: () => import('../../node_modules/photoswipe/dist/photoswipe.esm.js')
+});
+lightbox.init();
+
 // Burger
 const btnMenu = document.querySelector('#toggle');
 const menu = document.querySelector('.header__nav-list');
 const bodyEl = document.querySelector('body');
 let navItemAll = document.querySelectorAll('.header__nav-item');
-let langListPar = document.querySelector('.header__nav-langs-list');	
+
 
 const toggleMenu = function() {
 	menu.classList.toggle('open');	
@@ -119,6 +127,7 @@ document.addEventListener('click', function(e) {
     }		
 });
 
+// Open modal-teachers for media before 767px
 if (window.matchMedia("(min-width: 768px)").matches) {
 	let waysItems = document.querySelectorAll('.ways__item');
 	waysItems.forEach((el) => {		
@@ -126,6 +135,12 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 	})
 } 
 
+if (window.matchMedia("(min-width: 768px)").matches) {
+	let directionItems = document.querySelectorAll('.direction__content-item');
+	directionItems.forEach((el) => {		
+		el.removeAttribute('data-graph-path');
+	})
+} 
 
 
 

@@ -4,6 +4,10 @@
 
 	&__title {
 		margin-bottom: 10px;
+		@media (max-width: 767px){
+			font-size: 36px;
+			line-height: 44px;
+		}
 	}
 
 	&__subtitle {
@@ -14,7 +18,7 @@
 		text-transform: uppercase;
 		color: $gray-color;
 		opacity: 0.5;
-		margin-bottom: 8px;
+		margin-bottom: 20px;
 	}
 	&__content {
 		&-title {		
@@ -24,5 +28,8 @@
 			text-transform: uppercase;
 			margin-bottom: 30px;
 		}
+	}
+	@media (max-width: 767px){
+		padding-top: 45px;
 	}
 }

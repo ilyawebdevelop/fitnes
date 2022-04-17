@@ -11,6 +11,11 @@
     color: $blue-color;
     margin-bottom: 30px;
     margin-left: -37px;
+    @media (max-width: 575px){    
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 15px;
+    }
   }
   &-wrapper {
     padding-left: 30px;
@@ -21,6 +26,9 @@
     border: 1px solid #D7EFF7;
     box-sizing: border-box;
     border-radius: 8px;
+    @media (max-width: 575px){
+      padding-left: 10px;
+    }
   }
   &__title {
     margin-bottom: 5px;
@@ -68,6 +76,9 @@
     left: 7px;
     top: 5px;
   }
+  @media (max-width: 575px){
+    padding-right: 10px;
+  }
 }
 .title-wrapper {
   display: flex;
@@ -90,6 +101,10 @@
     text-transform: uppercase;
     color: $gray-color;
     margin-bottom: 30px;
+    @media (max-width: 575px){
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 }
 .lessons__content-payed {
@@ -98,5 +113,5 @@
   }
   .course__main-title {
     color: $gray-color;
-  }
+  }  
 }

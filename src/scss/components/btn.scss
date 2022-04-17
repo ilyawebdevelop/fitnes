@@ -138,6 +138,8 @@
   }
   @media (max-width: 767px){
     width: 300px;
+    margin-bottom: 6px;
+    font-size: 15px;
   }
 }
 .personal__content-change-pass {
@@ -156,6 +158,8 @@
   }
   @media (max-width: 767px){
     width: 300px;
+    text-align: center;
+    font-size: 15px;
   }
 }
 .direction__content-unsubscribe {	
@@ -175,6 +179,9 @@
   &:hover {
     border: 1px solid #D7EFF7;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);   
+  }
+  @media (max-width: 767px){
+    margin-left: 95px;
   }
 }
 .subscribe-btn {

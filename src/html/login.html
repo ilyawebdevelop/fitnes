@@ -17,18 +17,19 @@
 					В личном кабинете вы сможете отслеживать курсы по выбранному направлению и получать прочую информацию.
 				</p>
 				<form action="#" class="authorization__form" id="authorization__form">				
-					<div class="input-wrapper mail">
-						<input type="email" placeholder="Email" id="authorizationMail">
+					<div class="input-wrapper mail form-floating">
+						<input class="form-control" type="email" placeholder="Email" id="authorizationMail">
+						<label for="authorizationMail">Email</label>
 					</div>
-					<div class="input-wrapper password">
-						<input type="password" placeholder="Пароль" id="authorizationPassword">
+					<div class="input-wrapper password form-floating">
+						<input class="form-control" type="password" placeholder="Пароль" id="authorizationPassword">
+						<label for="authorizationPassword">Пароль</label>
 					</div>	
 					<div class="remember-wrapper">
 						<a class="btn" href="#">Войти</a>
 						<div class="remember-inner">
 							<input type="checkbox" id="authorization-checkbox" class="custom-checkbox">
-							<label for="authorization-checkbox"></label>						
-							<span class="remember">Запомнить меня</span>
+							<label for="authorization-checkbox" class="custom-checkbox-text">Запомнить меня</label>					
 						</div>	
 					</div>				
 					<div class="authorization__form-bottom">

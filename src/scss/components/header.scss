@@ -26,6 +26,9 @@
     line-height: 24px;     
     letter-spacing: 0.02em;
     color: $white-color;
+    &:hover {
+      color: $white-color;
+    }
     @media (max-width: 991px) {
       font-size: 12px;
     }
@@ -49,6 +52,9 @@
       height: 24px;
       background: url('@img/header/phone.svg') no-repeat center center / cover;
       margin-right: 12px;
+    }
+    &:hover {
+      color: $white-color;
     }
   }
   &__bottom {
