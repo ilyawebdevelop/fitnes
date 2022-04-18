@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Личный кабинет</title>
+</head>
+
+<body>	
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="header__top">
+    <div class="container-1380 container">   
+      <div class="row align-items-center">
+        <div class="col-6 col-md-3 order-3 order-md-1">
+          <a href="#" class="header__reference">Справочный материал</a>
+          <div class="header__person-img d-block d-md-none ml-auto">
+            <img src="img/person/person.png" alt="person-photo">
+          </div>
+        </div>
+        <div class="d-none d-md-block col-md-6 justify-content-center order-md-2">
+          <a href="tel:88001234567" class="header__tel justify-content-center">8 800 123 45 67</a>
+        </div>
+        <div class="col-6 col-md-3 order-1 order-md-3">
+          <div class="socials">
+            <ul class="socials__list justify-content-start justify-content-md-end">
+              <li class="socials__item">
+                <a href="#">
+                  <img src="img/header/vk.svg" alt="socials-img">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#">
+                  <img src="img/header/youtube.svg" alt="socials-img">
+                </a>
+              </li>
+            </ul>
+          </div><!-- /socials -->
+        </div>
+      </div>
+    </div><!-- /header__top -->  
+  </div>
+  <div class="header__bottom">
+    <div class="container-1380 container">
+      <div class="row align-items-center">
+        <div class="col-6 col-md-2">
+          <a href="index.html" class="d-flex header__logo">
+            <img src="img/header/logo.svg" alt="logo">
+            <img src="img/header/logo-text.svg" alt="logo-text">
+          </a>
+        </div>
+        <div class="col-6 col-md-9">
+          <nav class="header__nav">
+            <ul class="header__nav-list justify-content-center">
+              <li class="header__nav-item">
+                <a href="institute.html">институт</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="teachers.html">преподаватели</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="news.html">новости</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="articles.html">блог</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#">контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger menu" id="toggle" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+            <svg viewBox="0 0 48 48">
+              <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+              <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+              <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+            </svg>
+          </button>
+        </div>        
+        <div class="d-none d-md-block col-sm-1">
+          <div class="header__person">
+            <span class="header__person-name">Диана К.</span>
+            <div class="header__person-img">
+              <img src="img/person/person.png" alt="person-photo">
+            </div>
+          </div>       
+        </div>
+      </div>
+    </div>
+  </div><!-- /header__down -->
+</header>
+		<main class="main">
+			<!-- Breadcrumps -->
+<section class="breadcrumps d-none d-md-block" id="breadcrumps">
+  <div class="container">
+    <div class="breadcrumps__wrapper">
+      <a href="index.html">Главная</a>
+      <a href="#">Личный кабинет</a>      
+    </div>
+  </div>
+</section>
+
+			<!-- success -->
+<section class="success" id="success">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="success__title">
+          Личный кабинет
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <ul class="tabs__nav">
+          <li class="tabs__nav-item"><a href="announcement.html">Анонсы</a></li>
+          <li class="tabs__nav-item"><a href="personal.html">Личная информация</a></li>
+          <li class="tabs__nav-item"><a href="direction.html">Мои направления</a></li>
+          <li class="tabs__nav-item"><a href="lessons.html">Занятия</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-9">
+        <div class="success__content">
+          <div class="success__content-list">
+            <div class="success__content-item active">
+              <img src="img/success/check-arrow.svg" alt="icon">
+            </div>
+            <div class="success__line">
+
+            </div>
+            <div class="success__content-item">
+              2
+            </div>
+            <div class="success__line">
+
+            </div>
+            <div class="success__content-item">
+              3
+            </div>
+            <div class="success__line">
+
+            </div>
+            <div class="success__content-item">
+              4
+            </div>
+          </div>
+          <div class="success__content-title">
+            Готово! Вы успешно зарегистрировались.
+          </div>
+          <div class="success__content-descr">
+            Для продолжения, пожалуйста, выберите интересующие вас направления:
+          </div>
+          <div class="success__content-inner">
+          <ul class="success__content-cards">
+            <li class="success__content-card">
+              <div class="success__content-card-wrapper">
+                <img src="img/success/success-img1.png " alt="success-image">
+                <div class="success__content-text">Инструктор тренажерного зала</div>
+              </div>            
+              <button class="success__content-btn">выбрать</button>
+            </li>
+            <li class="success__content-card">
+              <div class="success__content-card-wrapper">
+                <img src="img/success/success-img2.png " alt="success-image">
+                <div class="success__content-text">Детский фитнес</div>
+              </div>             
+              <button class="success__content-btn">выбрать</button>
+            </li>
+            <li class="success__content-card">
+              <div class="success__content-card-wrapper">
+                <img src="img/success/success-img3.png " alt="success-image">
+                <div class="success__content-text">Инструктор групповых программ</div>
+              </div>             
+              <button class="success__content-btn">выбрать</button>
+            </li>
+            <li class="success__content-card">
+              <div class="success__content-card-wrapper">
+                <img src="img/success/success-img4.png " alt="success-image">
+                <div class="success__content-text">Фитнес-нутрициолог</div>
+              </div>              
+              <button class="success__content-btn">выбрать</button>
+            </li>
+            <li class="success__content-card">
+              <div class="success__content-card-wrapper">
+                <img src="img/success/success-img5.png " alt="success-image">
+                <div class="success__content-text">Персональный тренер</div>
+              </div>              
+              <button class="success__content-btn">выбрать</button>
+            </li>
+          </ul>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+			
+		
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-2">
+          <a href="index.html" class="logo-link">
+            <img src="img/footer/footer-logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="col-lg-8">
+           <nav class="footer__nav">
+             <ul class="footer__nav-list d-block d-lg-flex justify-content-center">
+               <li class="footer__nav-item">
+                 <a href="institute.html">Институт</a>
+               </li>
+               <li class="footer__nav-item">
+                <a href="teachers.html">Преподаватели</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="news.html">Новости</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="articles.html">Блог</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">Контакты</a>
+              </li>
+             </ul><!-- /footer__nav-list -->
+           </nav>
+           <a href="#" class="header__reference d-block d-lg-none">Справочный материал</a>
+           <div class="footer__contacts d-block d-lg-flex justify-content-center">
+             <a href="tel:8299922299" class="footer__tel">8 ХХХ ХХХ ХХ-ХХ</a>
+             <a href="mailto:email@rif.ru" class="footer__mail">email@rif.ru</a>
+           </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="socials">
+            <ul class="socials__list justify-content-start justify-content-lg-end">
+              <li class="socials__item">
+                <a href="#">
+                  <img src="img/header/vk.svg" alt="socials-img">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#">
+                  <img src="img/header/youtube.svg" alt="socials-img">
+                </a>
+              </li>
+            </ul>
+          </div><!-- /socials -->
+          <a href="#" class="header__reference d-none d-lg-block">Справочный материал</a>
+        </div>
+      </div>
+    </div><!-- /container -->
+  </div><!-- /footer__top -->
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <span class="copyright text-center text-lg-start">© РИФ</span>
+          <a href="#" class="politics text-center d-block d-lg-inline">Политика конфиденциальности</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="footer__check text-center">
+            <div class="footer__check-top">
+              <span>ОГРН </span>
+              <span>12345678900000</span>
+            </div>
+            <div class="footer__check-bottom">
+              <span>ИНН</span>
+              <span class="mr-8">1234567890</span>
+              <span>КПП</span>
+              <span>123456789</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center text-lg-end">
+          <div class="footer__develop">Разработка и продвижение </div>
+          <div class="footer__develop">
+            сайта —
+            <a href="вангер.рф">вангер.рф</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /footer__bottom -->
+
+</footer>
+
+
+		<div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-call" style="background: url('img/ways/ways-img.jpg') no-repeat center center / cover;">
+    <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <h4 class="graph-modal__title">Инструктор тренажерного зала</h4>
+      <div class="graph-modal__descr">
+        Краткое описание направления и программы обучения
+      </div>
+      <button class="subscribe-btn d-block">Подписаться</button>
+    </div>
+    <div class="graph-gradient">
+    </div>
+  </div>
+</div>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+</html>
+
+
+
+
